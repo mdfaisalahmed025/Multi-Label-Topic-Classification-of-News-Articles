@@ -1,12 +1,12 @@
 
-# 📰 MultiLabelNews
+# <span style="color:#1E90FF;">📰 MultiLabelNews: Multi-Label Topic Classification of News Articles using BBC News and Guardian Data.</span>
 
-MultiLabelNews: Multi-Label Topic Classification of News Articles using BBC News and Guardian Data.  
+
 An end-to-end project to build a **multi-label news classification system**, enabling accurate categorization of articles across multiple topics such as politics, economy, technology, and climate.
 
 ---
 
-## Motivation
+## <span style="color:#FF4500;">Motivation</span>
 
 Modern news articles often cover **multiple overlapping topics**, making it difficult for traditional single-label classifiers to capture the full context. Poor classification limits **content organization, analytics, and recommendation systems**.
 
@@ -28,26 +28,8 @@ By leveraging **transformer-based models and large-scale datasets**, this projec
 
 
 
-## Project Background
+## <span style="color:#FF4500;">Project Background</span>
 
-**MultiLabelNews** is built on **real-world news data** collected from reputable sources: BBC News and The Guardian. The pipeline includes:
-
-- **Data collection:** Scraping ~97K articles from BBC and The Guardian  
-- **Preprocessing:** Cleaning text, encoding labels, handling multi-label annotations  
-- **Modeling:** Transformer-based models for multi-label classification  
-- **Evaluation:** Analysis of label distributions, overlaps, and classifier performance  
-- **Deployment:** ONNX optimization and inference-ready scripts
-
-Key aspects:
-
-- Multi-label classification for **10+ categories**  
-- Standardized datasets for reproducible research  
-- Modular pipeline for scraping → preprocessing → training → inference  
-
----
-
-
-## Project Background
 
 **MultiLabelNews** is built on **real-world news data** collected from reputable sources: BBC News and The Guardian. The pipeline includes:
 
@@ -67,7 +49,7 @@ Key aspects:
 
 
 
-## Project Overview
+## <span style="color:#FF4500;">Project Overview</span>
 
 The system processes news articles and assigns **multiple topic labels** simultaneously.  
 
@@ -86,11 +68,11 @@ The system processes news articles and assigns **multiple topic labels** simulta
 - Society  
 
 
-## Dataset Validation & Processing
+## <span style="color:#FF4500;">Dataset Validation & Processing</span>
 
 This repository contains the cleaned and processed **multi-label news dataset**, along with the steps taken to ensure **data quality, consistency, and readiness for machine learning**.
 
-### Dataset Validation & Processing Results
+### <span style="color:#32CD32;">Dataset Validation & Processing Results
 
 - **Initial Dataset:** ~97,000 articles scraped from BBC News and The Guardian  
 - **Final Clean Dataset:** ~92,500 articles after preprocessing  
@@ -101,7 +83,7 @@ This repository contains the cleaned and processed **multi-label news dataset**,
 - **Weak Labeling / Encoding:** Multi-label target encoding using binary vectors  
 - **Train-Test Split:** Dataset split into training, validation, and test sets while maintaining label distributions  
 
-### Data Quality Checks
+### <span style="color:#32CD32;">Data Quality Checks</span>
 
 - **Completeness:** Ensured every article has text content and at least one label  
 - **Uniqueness:** Removed duplicates to avoid data leakage in training  
@@ -110,7 +92,7 @@ This repository contains the cleaned and processed **multi-label news dataset**,
 - **Integrity:** Ensured no mismatch between article content and associated labels  
 
 
-### Dataset Columns
+### <span style="color:#32CD32;">Dataset Columns</span>
 
 | Column Name      | Description                                           | Data Type       |
 |------------------|------------------------------------------------------|----------------|
@@ -135,9 +117,9 @@ This **cleaned and processed dataset** is ready for:
 
 
 
-## Training & Model Evaluation
+## <span style="color:#FF4500;">Training & Model Evaluation</span>
 
-### 🛠️ Model Training
+### 🛠️ <span style="color:#32CD32;">Model Training</span>
 
 - **Base Model:** `distilroberta-base` transformer encoder  
 - **Task:** Multi-label topic classification of news articles  
@@ -158,7 +140,7 @@ This **cleaned and processed dataset** is ready for:
 
 
 
-### 📊 Model Benchmarking
+### 📊 <span style="color:#32CD32;">Model Benchmarking</span>
 
 | Model Stage        | Base Architecture     | Validation Accuracy | Epochs | Remarks                                  |
 |------------------- |-------------------- |------------------ |------- |---------------------------------------- |
@@ -172,7 +154,7 @@ This **cleaned and processed dataset** is ready for:
 
 ---
 
-### 🔍 Evaluation & Metrics
+### 🔍 <span style="color:#32CD32;">Evaluation & Metrics</span>
 
 - **Metric:** Multi-label F1-score, Precision, and Recall were used to assess model performance across all topic labels  
 - **Confusion Analysis:** Observed model accurately predicts multiple overlapping topics such as *Politics + Economy* or *Technology + Science*  
@@ -189,7 +171,7 @@ This **cleaned and processed dataset** is ready for:
 
 ---
 
-### ⚡ Deployment & Inference
+### ⚡ <span style="color:#32CD32;">Deployment & Inference</span>
 
 - **BLURR Inference Pipelines:** Fast batch predictions with tokenized inputs  
 - **ONNX Models:** Optimized for CPU inference; ready for API integration  
@@ -198,7 +180,7 @@ This **cleaned and processed dataset** is ready for:
 
 
 
-## Model Deployment
+## <span style="color:#FF4500;">Model Deployment</span>
 
 The model has been deployed to **Hugging Face Spaces** using **Gradio**:  
 
@@ -233,7 +215,7 @@ The model has been deployed to **Hugging Face Spaces** using **Gradio**:
 
 ---
 
-## Future Work
+## <span style="color:#FF4500;">Future Work</span>
 
 - Expand dataset with more sources for richer topic coverage  
 - Experiment with larger transformer models for improved accuracy  
@@ -243,7 +225,7 @@ The model has been deployed to **Hugging Face Spaces** using **Gradio**:
 ---
 
 
-### 📌 Directory & File Overview
+### 📌 <span style="color:#FF4500;">Directory & File Overview</span>
 
 - **data/** – Contains all raw and processed datasets used for model training and evaluation.  
 - **dataloaders/** – Includes custom data loaders, tokenizers, and preprocessing artifacts for model input.  
@@ -264,7 +246,7 @@ The model has been deployed to **Hugging Face Spaces** using **Gradio**:
 - **.gitignore** – Specifies files and directories ignored by Git (e.g., large model files).  
 
 
-## Installation & Setup
+## <span style="color:#FF4500;">Installation & Setup</span>
 
 1️⃣ **Clone Repository**  
 
@@ -278,4 +260,5 @@ cd Multi-Label-Topic-Classification-of-News-Articles-
 **Project Maintainer:** Md Faisal Ahmed  
 **Portfolio:** [mdfaisalahmed.online](https://mdfaisalahmed.online/)  
 **GitHub:** [@mdfaisalahmed025](https://github.com/mdfaisalahmed025)  
+
 
