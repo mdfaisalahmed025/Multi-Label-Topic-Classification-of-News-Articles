@@ -198,93 +198,95 @@ This **cleaned and processed dataset** is ready for:
 
 
 
+## Model Deployment
 
+The model has been deployed to **Hugging Face Spaces** using **Gradio**:  
 
+- Interactive UI allows users to input article text and receive **multi-label predictions with confidence scores**  
+- BLURR inference ensures fast batch predictions  
+- ONNX model used for CPU-optimized inference  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+🔗 [HuggingFace Space Demo](https://huggingface.co/spaces/mdfaisalahmed025/Multilabel-News-Article-Classifier)  
 
 ---
 
-## 🚀 Project Highlights
-- 🔖 **Multi-label text classification** (one article → multiple topics)  
-- 🧠 **Transformer-based architecture**  
-- ⚡ **Optimized ONNX inference** for CPU  
-- 🧩 **Modular pipeline**: scraping → training → inference  
-- 🌐 **Deployment-ready** (Hugging Face / API friendly)  
-- 📦 **Large models stored externally** (GitHub-safe)
+### Interactive Gradio Interface
+
+<p align="center">
+  <img src="/screenshots/gradio_interface.png" width="750" height="400" alt="Gradio App Screenshot"/>
+</p>
 
 ---
 
-## 📁 Project Structure
+### Web Integration
 
+- Deployed website integrates Hugging Face API via **Render / GitHub Pages**  
+- Users can input news articles directly from browser  
+- API returns predictions displayed in the web interface  
+
+<p align="center">
+  <img src="/screenshots/render_webpage.png.png" width="750" height="400" alt="Gradio App Screenshot"/>
+</p>
+
+
+🔗 [Live NewsLens Website](https://multi-label-topic-classification-of-news.onrender.com)  
+
+---
+
+## Future Work
+
+- Expand dataset with more sources for richer topic coverage  
+- Experiment with larger transformer models for improved accuracy  
+- Quantize ONNX model to optimize deployment performance  
+- Add real-time article streaming and multi-label batch inference  
+
+---
+
+## Project Structure
 
 Multi-Label-Topic-Classification-of-News-Articles/
 │
-├── data/ # Raw & processed datasets
-├── dataloaders/ # Data loaders & preprocessing artifacts
-├── labeling/ # Label encoding & mappings
-├── models/ # (Ignored) trained models
-├── notebooks/ # Experiments & analysis notebooks
-├── pipeline/ # Training & inference pipelines
-├── scraper/ # News scraping utilities
-├── website_deployment/ # Web / API deployment code
-├── huggingface_deployment/ # HF-compatible inference setup
+├── data/                     # Raw & processed datasets
+├── dataloaders/              # Data loaders & preprocessing artifacts
+├── labeling/                 # Label encoding & mappings
+├── models/                   # (Ignored) trained models
+├── notebooks/                # Experiments & analysis notebooks
+├── pipeline/                 # Training & inference pipelines
+├── scraper/                  # News scraping utilities
+├── website_deployment/       # Web / API deployment code
+├── huggingface_deployment/   # HF-compatible inference setup
 │
-├── config.py # Central configuration
-├── requirements.txt # Dependencies
-├── test.py # Inference testing
-├── README.md # Project documentation
-└── .gitignore # Git ignore rules
+├── config.py                 # Central configuration
+├── requirements.txt          # Dependencies
+├── test.py                   # Inference testing
+├── README.md                 # Project documentation
+└── .gitignore                # Git ignore rules
 
 
+## Installation & Setup
 
----
+1️⃣ **Clone Repository**  
 
-## 🧠 Model Architecture
-
-- **Base Model:** Transformer-based encoder  
-- **Task:** Multi-label classification  
-- **Output:** Binary relevance per topic  
-- **Inference format:** ONNX (CPU-optimized)  
-
----
-
-## 📥 Download Trained Models (Required)
-
-Due to GitHub file size limits, **trained models are hosted externally**.  
-
-| Model Type | Description | Download Link |
-|------------|-------------|---------------|
-| Final ONNX Model | Optimized CPU inference | [Download](https://drive.google.com/file/d/1fuhW4hpIsLmlKlwadirXNzquwU3F5Xxw/view) |
-| Final PyTorch / Pickle Model | Full training weights | [Download](https://drive.google.com/file/d/1rILhNxyiOb8LnWiJbsRVwyVpnokjIBIf/view) |
-| Stage / Backup Model | Backup / intermediate version | [Download](https://drive.google.com/file/d/1vwKPcRc28kgrJ_jS6MDkNyNx6eE6NEtd/view) |
-
----
-
-## ⚙️ Installation
-
-### 1️⃣ Clone Repository
 ```bash
 git clone https://github.com/mdfaisalahmed025/Multi-Label-Topic-Classification-of-News-Articles-.git
 cd Multi-Label-Topic-Classification-of-News-Articles-
 
 
 
----
+# 📞 Contact / Author
 
-If you want, I can also **make a visually richer README with badges, table of contents, and black/white premium theme style** that looks like a **professional GitHub project**.  
+**Project Maintainer:** Md Faisal Ahmed  
+**Portfolio:** [mdfaisalahmed.online](https://mdfaisalahmed.online/)  
+**GitHub:** [@mdfaisalahmed025](https://github.com/mdfaisalahmed025)  
 
-Do you want me to do that next?
+
+
+
+
+
+
+
+
+
+
+
