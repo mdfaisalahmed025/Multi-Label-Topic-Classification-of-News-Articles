@@ -11,28 +11,27 @@ This project is designed for research, production, and deployment scenarios, wit
 
 Multi-Label-Topic-Classification-of-News-Articles/
 │
-├── data/                     # Raw & processed datasets
-├── dataloaders/              # Data loaders & preprocessing artifacts
-├── labeling/                 # Label encoding & mappings
-├── models/                   # (Ignored) trained models
-├── notebooks/                # Experiments & analysis notebooks
-├── pipeline/                 # Training & inference pipelines
-├── scraper/                  # News scraping utilities
-├── website_deployment/       # Web / API deployment code
-├── huggingface_deployment/   # HF-compatible inference setup
+├── data/ # Raw & processed datasets
+├── dataloaders/ # Data loaders & preprocessing artifacts
+├── labeling/ # Label encoding & mappings
+├── models/ # (Ignored) trained models
+├── notebooks/ # Experiments & analysis notebooks
+├── pipeline/ # Training & inference pipelines
+├── scraper/ # News scraping utilities
+├── website_deployment/ # Web / API deployment code
+├── huggingface_deployment/ # HF-compatible inference setup
 │
-├── config.py                 # Central configuration
-├── requirements.txt          # Dependencies
-├── test.py                   # Inference testing
-├── README.md                 # Project documentation
-└── .gitignore                # Git ignore rules
+├── config.py # Central configuration
+├── requirements.txt # Dependencies
+├── test.py # Inference testing
+├── README.md # Project documentation
+└── .gitignore # Git ignore rules
 
 🧠 Model Architecture
 Base Model: Transformer-based encoder
 Task: Multi-label classification
 Output: Binary relevance per topic
 Inference format: ONNX (CPU-optimized)
-
 
 📥 Download Trained Models (Required)
 Due to GitHub file size limits, trained models are hosted externally.
@@ -50,6 +49,6 @@ git clone https://github.com/mdfaisalahmed025/Multi-Label-Topic-Classification-o
 cd Multi-Label-Topic-Classification-of-News-Articles-
 2️⃣ Create Virtual Environment
 python -m venv venv
-source venv/bin/activate   # macOS/Linux
-# venv\Scripts\activate    # Windows
+source venv/bin/activate # macOS/Linux
 
+# venv\Scripts\activate # Windows
