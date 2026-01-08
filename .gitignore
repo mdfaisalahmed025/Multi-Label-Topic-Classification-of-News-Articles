@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+
+# Node
+node_modules/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data (VERY IMPORTANT)
+data/
+*.csv
+*.zip
+*.tar.gz
+
+# System
+.DS_Store
+.nvm/
+.vscode/
+.idea/
+
