@@ -129,16 +129,24 @@ This **cleaned and processed dataset** is ready for:
 
 ### 📊 <span style="color:#32CD32;">Model Benchmarking</span>
 
-| Model Stage | Base Architecture  | Validation Accuracy | Epochs | Remarks                                          |
-| ----------- | ------------------ | ------------------- | ------ | ------------------------------------------------ |
-| **Stage 1** | distilroberta-base | 90%                 | 5      | Initial training on raw preprocessed data        |
-| **Stage 2** | distilroberta-base | **91%**             | 5      | Fine-tuned for label balance and noise reduction |
+## 📊 Model Benchmarking
 
-✅ **Conclusion:**
+| Base Architecture      | Validation Accuracy | Epochs | Remarks                                                             |
+|------------------------|---------------------|--------|----------------------------------------------------------------------|
+| distilroberta-base     | 91%                 | 10     | Lightweight model with strong performance and fast inference        |
+| bert-base-uncased      | 91%                 | 10      | Stable baseline with consistent convergence                         |
+| roberta-base           | **92%**             | 10     | Best-performing model with superior contextual representation       |
 
-- Two-stage training with DistilRoBERTa achieved high performance with 91% validation accuracy.
-- BLURR inference ensures efficient prediction on batches of articles.
-- ONNX export provides deployment-ready models, though quantization was not feasible due to shape inconsistencies.
+---
+
+## ✅ Conclusion
+
+- **RoBERTa-base** achieved the highest validation accuracy (**92%**), making it the most effective model for multi-label text classification in this setup.
+- **DistilRoBERTa** delivered competitive accuracy with reduced computational overhead, making it ideal for resource-efficient deployment.
+- **BERT-base-uncased** provided stable and reliable results, serving as a strong baseline architecture.
+- BLURR-based inference enables efficient batch prediction while maintaining compatibility with the fastai ecosystem.
+- ONNX export ensures deployment readiness; however, post-training quantization was not feasible due to dynamic shape inconsistencies in multi-label outputs.
+
 
 ---
 
